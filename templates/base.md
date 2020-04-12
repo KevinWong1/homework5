@@ -40,7 +40,7 @@
       </div>
       <!-- end of left side panel -->
       <!-- replace content with contents of each individual page using python script-->
-      {{ content }}
+      {{ content|safe }}
       <!-- start of bottom -->
     </div>
   </div>
