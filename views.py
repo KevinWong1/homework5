@@ -9,9 +9,9 @@ def index(request):
     return HttpResponse('''
         <h1>Welcome to my home page!</h1>
         <a href="/about-me">About me</a> <br />
-        <a href="/github-api-example">See my GitHub contributions</a> <br />
         <a href="/real_index">real_index</a> <br />
         <a href="/projects">projects</a> <br />
+        <a href="/github-api-example">See my GitHub contributions</a> <br />
     ''')
 
 def real_index(request):
@@ -19,7 +19,7 @@ def real_index(request):
     context = {
     "content": content_html,
     }
-    return render(request, "base.html", context)
+    return render(request, "base.md", context)
 
 def about_me(request):
     # Django comes with a "shortcut" function called "render", that
@@ -29,7 +29,7 @@ def about_me(request):
     context = {
     "content": content_html,
     }
-    return render(request, "base.html", context)
+    return render(request, "base.md", context)
 
 def projects(request):
     # Django comes with a "shortcut" function called "render", that
@@ -39,7 +39,7 @@ def projects(request):
     context = {
     "content": content_html,
     }
-    return render(request, "base.html", context)
+    return render(request, "base.md", context)
 
 def github_api_example(request):
     # We can also combine Django with APIs
