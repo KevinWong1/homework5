@@ -21,7 +21,7 @@ def real_index(request):
     }
     return render(request, "base.md", context)
 
-def about_me(request):
+def about(request):
     # Django comes with a "shortcut" function called "render", that
     # lets us read in HTML template files in separate directories to
     # keep our code better organized.
@@ -32,9 +32,6 @@ def about_me(request):
     return render(request, "base.md", context)
 
 def projects(request):
-    # Django comes with a "shortcut" function called "render", that
-    # lets us read in HTML template files in separate directories to
-    # keep our code better organized.
     content_html = open("content/projects.md").read()
     context = {
     "content": content_html,

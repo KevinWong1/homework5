@@ -6,7 +6,7 @@ import views
 urlpatterns = [
     path('', views.index),
     path('real_index', views.real_index),
-    path('about_me', views.about_me),
+    path('about', views.about),
     path('projects', views.projects),
     path('github-api-example', views.github_api_example),
 ]
