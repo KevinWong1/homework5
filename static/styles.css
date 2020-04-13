@@ -1,6 +1,6 @@
 body {
   margin-top: 20px;
-  background: url("../img/geometric-leaves.png");
+  background: url("/geometric-leaves.png");
   background-size: auto;
 }
 
@@ -48,7 +48,7 @@ div p {
 .strikingbackground {
   border: 5px solid orange;
   margin: 10px;
-  background: url("../img/strikingbackground.jpg") no-repeat top right;
+  background: url("/strikingbackground.jpg") no-repeat top right;
 }
 
 .active {
@@ -61,6 +61,6 @@ div p {
   margin-top: 20px;
 }
 
-img[src="../img/pic2.png"] {
+img[src="../pic2.png"] {
   margin-top: 10px;
 }

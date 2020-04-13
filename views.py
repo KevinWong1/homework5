@@ -1,6 +1,22 @@
 import requests
 from django.http import HttpResponse
 from django.shortcuts import render
+import datetime
+import glob
+import os
+
+pages = []
+all_content_files = glob.glob("content/*.md")
+for page in all_content_files:
+    file_name = os.path.basename(page)
+    name_only, extension = os.path.splitext(file_name)
+    pages.append({
+        "filename": "content/" + file_name,
+        "title": name_only,
+        "output": file_name
+    })
+year = datetime.datetime.now().strftime('%Y')
+
 
 def index(request):
     # This is similar to ones we have done before. Instead of keeping
@@ -8,7 +24,7 @@ def index(request):
     # the HTML embedded here.
     return HttpResponse('''
         <h1>Welcome to my home page!</h1>
-        <a href="/about-me">About me</a> <br />
+        <a href="/about">About me</a> <br />
         <a href="/real_index">real_index</a> <br />
         <a href="/projects">projects</a> <br />
         <a href="/github-api-example">See my GitHub contributions</a> <br />
@@ -18,6 +34,8 @@ def real_index(request):
     content_html = open("content/index.md").read()
     context = {
     "content": content_html,
+    "year": str(year),
+    "pages": pages,
     }
     return render(request, "base.md", context)
 
@@ -28,6 +46,8 @@ def about(request):
     content_html = open("content/about.md").read()
     context = {
     "content": content_html,
+    "year": str(year),
+    "pages": pages,
     }
     return render(request, "base.md", context)
 
@@ -35,6 +55,8 @@ def projects(request):
     content_html = open("content/projects.md").read()
     context = {
     "content": content_html,
+    "year": str(year),
+    "pages": pages,
     }
     return render(request, "base.md", context)
 

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../docs/css/styles.css" />
+  <link rel="stylesheet" href="../static/styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Fredoka+One&display=swap" rel="stylesheet" />
   <title>{{ title }}</title>
 </head>
@@ -17,26 +17,22 @@
     <div class="row">
       <div class="rounded-lg strikingbackground col min_height">
         <h1 class="text-center">Kevin Wong</h1>
-        <img src="../docs/img/pic1.jpg" class="img-fluid img-thumbnail catleft" />
-
+        <img src="../static/pic1.jpg" class="img-fluid img-thumbnail catleft" />
         {% for page in pages %}
-        <a href="{{ page.title }}.html">
+        <a href="{{ page.title }}">
           <p>
             <button type="button" class="btn buttoncss 
-            
-            {% if page.title ==  title  %}
+            {% if page.title == title  %}
             active
             {% else %}
             pass
             {% endif %}
-
             ">
-              {{ page.title }} <i class="fas fa-cat"></i>
+            {{ page.title }} <i class="fas fa-cat"></i>
             </button>
           </p>
         </a>
         {% endfor %}
-
       </div>
       <!-- end of left side panel -->
       <!-- replace content with contents of each individual page using python script-->

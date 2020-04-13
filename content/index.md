@@ -7,9 +7,9 @@
   </div>
   <!-- row -->
   <div>
-    <div class=" strikingbackground row">
+    <div class="strikingbackground row">
       <div class="col-4">
-        <img src="../docs/img/pic2.png" class="img-thumbnail cat2 img-fluid" />
+        <img src="../static/pic2.png" class="img-thumbnail cat2 img-fluid" />
       </div>
       <div class="col">
         <h2>
@@ -27,7 +27,7 @@
     <!-- another row -->
     <div class="strikingbackground row">
       <div class="col-4">
-        <img src="../docs/img/pic2.png" class="img-thumbnail cat2 img-fluid" />
+        <img src="../static/pic2.png" class="img-thumbnail cat2 img-fluid" />
       </div>
       <div class="col">
         <h2>
@@ -44,7 +44,7 @@
     </div>
     <div class="strikingbackground row">
       <div class="col-4">
-        <img src="../docs/img/pic2.png" class="img-thumbnail cat2 img-fluid" />
+        <img src="../static/pic2.png" class="img-thumbnail cat2 img-fluid" />
       </div>
       <div class="col">
         <h2>
