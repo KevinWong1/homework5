@@ -28,6 +28,7 @@
             pass
             {% endif %}
             ">
+
             {{ page.title }} <i class="fas fa-cat"></i>
             </button>
           </p>
