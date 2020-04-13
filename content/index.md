@@ -29,7 +29,7 @@
       <div class="col-4">
         <img src="../static/pic2.png" class="img-thumbnail cat2 img-fluid" />
       </div>
-      <div class="col">
+      <div class="col"> 
         <h2>
           So far I really like Ubuntu Linux
         </h2>
