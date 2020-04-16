@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <p> <a href="/weather">Click here for Oakland's weather</a></p>
   <div class="container">
     <div class="row">
       <div class="rounded-lg strikingbackground col min_height">
