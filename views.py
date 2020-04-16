@@ -43,10 +43,9 @@ def projects(request):
 
 # API call:
 # api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
-
 # api.openweathermap.org/data/2.5/weather?q={city name},{state}&appid={your api key}
-
 # api.openweathermap.org/data/2.5/weather?q={city name},{state},{country code}&appid={your api key}
+# don't take my key :(
 api_key = open("my_api_key.txt").read()
 url = 'https://api.openweathermap.org/data/2.5/weather?q=Oakland,California,USA&units=metric&APPID='+ api_key
 weather_icon_start = 'http://openweathermap.org/img/wn/'
