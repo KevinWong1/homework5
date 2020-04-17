@@ -63,7 +63,7 @@ def weather(request):
         "temp": jsons['main']['temp'],
         "weather": jsons['weather'][0]['description'],
         "current_time": time_now,
-        "temp_in_F": int(jsons['main']['temp']) * 9/5 + 32
+        "temp_in_F": (jsons['main']['temp'] * 9/5) + 32
     }
     return render(request, "weather_template.html", context)
 
